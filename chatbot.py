@@ -10,7 +10,7 @@ chatbot = GenericAssistant("intents.json")
 chatbot.train_model()
 chatbot.save_model()
 
-REPLICATE_API_TOKEN = "fa8c98ece9af7ff9f0fa9b2b6685119b00339906"
+REPLICATE_API_TOKEN = 'YOUR_API_KEY'
 
 def reply(msg, nm, gali):
     print("reply ke andar hai")
