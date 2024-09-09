@@ -41,7 +41,7 @@ def reply(msg, nm, gali):
                 elif "solve" in msg:
                     try:
                         query = msg.split("solve")[1].lower().strip()
-                        client = wolframalpha.Client('VG3YKH-LQVW4WGTWV')
+                        client = wolframalpha.Client('Your API Key')
                         res = client.query(query)
                         data = res["pod"]
                         mainData = [i['subpod']['plaintext'] if i['subpod']['plaintext'] else i['subpod']['img']['@src'] for i in data if 'subpod' in i]
